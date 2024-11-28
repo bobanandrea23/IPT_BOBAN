@@ -1,0 +1,166 @@
+/* Reset */
+body, h1, h2, p, nav, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5f5f5, #ffffff);
+    color: #444;
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    background: #ff758c; 
+    color: white;
+    padding: 6rem 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    font-size: 4rem;
+    font-family: 'Pacifico', cursive;
+}
+
+header p {        
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 12px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff9a8b;
+    color: white;
+}
+
+nav a.active {
+    background-color: #ff9a8b;
+    color: white;
+    font-weight: bold;
+}
+
+/* Content Section */
+.content {
+    text-align: center;
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content h2 {
+    font-size: 3rem;
+    color: #ff758c;
+    margin-bottom: 40px;
+    font-family: 'Pacifico', cursive;
+}
+
+.content p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* History Cards */
+.history-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.history-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.history-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.history-card h3 {
+    font-size: 1.8rem;
+    color: #ff758c;
+    margin-bottom: 10px;
+}
+
+.history-card p {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .content h2 {
+        font-size: 2.5rem;
+    }
+
+    .history-card {
+        width: 100%;
+    }
+}
